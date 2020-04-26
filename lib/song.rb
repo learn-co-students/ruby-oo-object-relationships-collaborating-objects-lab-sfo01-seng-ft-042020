@@ -31,7 +31,6 @@ attr_accessor :name, :artist
        @artist = Artist.find_or_create_by_name(art_name)
     end
 
-    private
     def save
         @@all << self
     end
